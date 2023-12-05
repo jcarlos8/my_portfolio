@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/pico.min.css">
 </head>
 <body>
     <nav>
         <a href="#">Home</a><a href="#">Portfolio</a><a href="">Contact</a>
     </nav>
+
+    <!-- <section>
+        <img src="" alt="profile_picture">
+    </section> -->
 
     <main>
         <h1>José Costa,</h1>
@@ -18,9 +23,40 @@
         <br>
         <p>I am a front-end web developer based in Manchester, United Kingdom. <br> Coding web applications has become my new professional drive.</p>
     </main>
-    
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+<input type="hidden" name="access_key" value="c856d3a5-3610-448b-9159-a860beab2d38">
+
+  <!-- Grid -->
+  <div class="grid">
+
+    <!-- Markup example 1: input is inside label -->
+    <label for="firstname">
+      First name
+      <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+    </label>
+
+    <label for="lastname">
+      Last name
+      <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+    </label>
+
+  </div>
+
+  <!-- Markup example 2: input is after label -->
+  <label for="email">Email address</label>
+  <input type="email" id="email" name="email" placeholder="Email address" required>
+  <small>We'll never share your email with anyone else.</small>
+
+  <!-- Button -->
+  <button type="submit">Submit</button>
+
+</form>
 
 
     <script src="./assets/index.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/postcss.config.min.js"></script>
 </body>
 </html>
