@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: white;
     font-family: sans-serif;
+}
+
+#container {
+    min-height: 100%;
 }
 
 nav {
@@ -36,6 +44,8 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
+    overflow: auto;
+    padding-bottom: 100px;
 }
 
 
@@ -44,4 +54,21 @@ main h2 {
     background: -webkit-linear-gradient(#0c18f0, #f6b205);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ff5c35;
+    border-radius: 50%;
+}
+
+footer a i {
+    color: black;
 }
